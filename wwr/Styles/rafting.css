@@ -1,5 +1,29 @@
+.gallery {
+    margin: 20px;
+}
 
-* {
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-images figure {
+    position: relative;
+    text-align: center;
+}
+
+.gallery-images img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.gallery-images figcaption {
+    color: #4F772D;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,7 +70,7 @@ nav a:hover {
 
 .hero h1 {
     position:absolute ;
-    top: 3%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
@@ -92,19 +116,6 @@ p {
     font-size: 1rem;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.gallery img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
 
 footer {
     background-color: #31572C;
@@ -131,7 +142,65 @@ footer p {
         padding: 15px;
     }
 
-    .gallery img {
-        max-width: 150px;
-    }
+    
+}
+.history {
+    padding: 20px;
+    background-color: #ECF39E;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.history h2 {
+    color: #132A13;
+}
+
+.history p {
+    color: #31572C;
+}
+
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: Acme, Arial, sans-serif;
+}
+
+nav {
+	text-align: right;
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+}
+
+.navigation li {
+	flex: 1 1 100%;
+}
+
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
 }
